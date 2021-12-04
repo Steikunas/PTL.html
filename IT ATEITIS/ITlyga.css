@@ -1,0 +1,162 @@
+body {
+    height: 100%; width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+        'a a a a a'
+        'b c c c c'
+        'd d d d d';
+    grid-template-rows: 50px auto 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+header {
+    grid-area: a;
+}
+header {border-style: groove; border-color: black; border-width: 1px; text-align: center;
+    vertical-align: baseline; display: inline-block; font-family: Verdana; position: sticky;
+.header1 {text-align: left;}
+picture {padding-right: 100px };
+
+}
+
+aside {
+    grid-area: b;
+}
+aside {}
+main {
+    grid-area: c;
+}
+footer {
+    grid-area: d;
+}
+
+/* Extra maži įrenginiai (telefonai, 600px ir žemiau) */
+@media only screen and (max-width: 600px) {
+    header {
+        background-color: RGB(6, 56, 81);
+    }
+    aside {
+        background-color: antiquewhite;
+    }
+    main {
+        background-color: RGB(253, 222, 18, 0.5);
+    }
+    footer {
+        background-color: navajowhite;
+    }
+    body {
+        display: grid;
+        grid-template-areas:
+            'a'
+            'b'
+            'c'
+            'd';
+        grid-template-rows: 50px 50px auto 50px;
+        grid-template-columns: 5fr;
+    }
+}
+/* Maži įrenginiai (statmenos planšetės, ar gulsti telefonai 600px ir aukščiau) */
+@media only screen and (min-width: 600px) {
+    header {
+        background-color: antiquewhite;
+    }
+    aside {
+        background-color: antiquewhite;
+    }
+    main {
+        background-color: RGB(253, 222, 18, 0.5);
+    }
+    footer {
+        background-color: navajowhite;
+    }
+    body {
+        display: grid;
+        grid-template-areas:
+            'a'
+            'b'
+            'c'
+            'd';
+        grid-template-rows: 50px 50px auto 50px;
+        grid-template-columns: 5fr;
+    }
+}
+/* Vidutiniai įrenginiai (gulsčios planšetės ar maži laptopai, 768px ir aukščiau) */
+@media only screen and (min-width: 768px) {
+    header {
+        background-color: RGB(6, 56, 81, 0.5);
+    }
+    aside {
+        background-color: antiquewhite;
+    }
+    main {
+        background-color: RGB(253, 222, 18, 0.5);
+    }
+    footer {
+        background-color: navajowhite;
+    }
+    body {
+        height: 100%;
+        display: grid;
+        grid-template-areas:
+            'a a a a a'
+            'b c c c c'
+            'd d d d d';
+        grid-template-rows: 50px auto 50px;
+        grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+    }
+}
+/* Dideli įrenginiai (laptopai, staliniai PC, 992px ir aukščiau) */
+@media only screen and (min-width: 992px) {
+    header {
+        background-color: RGB(6, 56, 81, 0.5);
+    }
+    aside {
+        background-color: antiquewhite;
+    }
+    main {
+        background-color: RGB(253, 222, 18, 0.5);
+    }
+    footer {
+        background-color: navajowhite;
+    }
+    body {
+        height: 100%;
+        display: grid;
+        grid-template-areas:
+            'a a a a a'
+            'b c c c c'
+            'd d d d d';
+        grid-template-rows: 50px auto 50px;
+        grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+    }
+}
+/* Extra dideli įrenginiai (dideli laptopai ir stalinai PC, 1200px ir aukščiau) */
+@media only screen and (min-width: 1200px) {
+    header {
+        background-color: antiquewhite;
+    }
+    aside {
+        background-color: antiquewhite;
+    }
+    main {
+        background-color: RGB(253, 222, 18, 0.5);
+    }
+    footer {
+        background-color: navajowhite;
+    }
+    body {
+        height: 100%;
+        display: grid;
+        grid-template-areas:
+            'a a a a a'
+            'b c c c c'
+            'd d d d d';
+        grid-template-rows: 50px auto 50px;
+        grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+    }
+
+}
+
+picture {grid-gap: 10px;}
