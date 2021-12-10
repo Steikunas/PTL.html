@@ -3,39 +3,72 @@ body {
     margin: auto;
     display: grid;
     grid-template-areas:
-        'a a a a a'
+        'l a a a a
         'b c c c c'
         'd d d d d';
-    grid-template-rows: 50px auto 50px;
+    grid-template-rows: 100px auto 50px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 5px;
+    grid-gap: 10px;
 }
 
 header {
     grid-area: a;
 }
-header {border-style: groove; border-color: black; border-width: 1px; text-align: center;
+header {border-style: groove; border-color: white; border-width: 0px; text-align: center;
     vertical-align: baseline; display: inline-block; font-family: Verdana; position: sticky;
-.header1 {text-align: left;}
-picture {padding-right: 100px };
+    margin:5px; padding: 0px;}
+.nb {background-color: goldenrod;
+         list-style-type: none;
 
+     }
+.nb a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 12px;
+}  .nb {
+    overflow: hidden;
+    background-color: RGB(6, 56, 81, 0.5);
+}  .nb a:hover {
+    background-color: #ddd;
+    color: black;
+}  .nb a.active {
+    background-color: #04AA6D;
+    color: white;
 }
+li {
+    display: inline;
+}
+
+
+.logo {grid-area: l;}
+.logo {text-align: center; position: sticky;}
 
 aside {
     grid-area: b;
 }
-aside {}
+aside {
+    text-align: center;
+    vertical-align: baseline; display: inline-block; font-size: 10px;
+}
 main {
     grid-area: c;
 }
+picture {text-align: right;}
+
 footer {
     grid-area: d;
 }
+footer {text-align: center;}
 
 /* Extra maži įrenginiai (telefonai, 600px ir žemiau) */
 @media only screen and (max-width: 600px) {
+    .logo {background-color: white;}
     header {
-        background-color: RGB(6, 56, 81);
+        background-color: white;
     }
     aside {
         background-color: antiquewhite;
@@ -49,18 +82,20 @@ footer {
     body {
         display: grid;
         grid-template-areas:
+            'l'
             'a'
             'b'
             'c'
             'd';
-        grid-template-rows: 50px 50px auto 50px;
+        grid-template-rows: 100px 50px auto 50px;
         grid-template-columns: 5fr;
     }
 }
 /* Maži įrenginiai (statmenos planšetės, ar gulsti telefonai 600px ir aukščiau) */
 @media only screen and (min-width: 600px) {
+    .logo {background-color: white;}
     header {
-        background-color: antiquewhite;
+        background-color: white;
     }
     aside {
         background-color: antiquewhite;
@@ -74,18 +109,20 @@ footer {
     body {
         display: grid;
         grid-template-areas:
+            'l'
             'a'
             'b'
             'c'
             'd';
-        grid-template-rows: 50px 50px auto 50px;
+        grid-template-rows: 100px 50px auto 50px;
         grid-template-columns: 5fr;
     }
 }
 /* Vidutiniai įrenginiai (gulsčios planšetės ar maži laptopai, 768px ir aukščiau) */
 @media only screen and (min-width: 768px) {
+    .logo {background-color: white;}
     header {
-        background-color: RGB(6, 56, 81, 0.5);
+        background-color: white;
     }
     aside {
         background-color: antiquewhite;
@@ -100,17 +137,18 @@ footer {
         height: 100%;
         display: grid;
         grid-template-areas:
-            'a a a a a'
+            'l a a a a'
             'b c c c c'
             'd d d d d';
-        grid-template-rows: 50px auto 50px;
+        grid-template-rows: 100px auto 50px;
         grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
     }
 }
 /* Dideli įrenginiai (laptopai, staliniai PC, 992px ir aukščiau) */
 @media only screen and (min-width: 992px) {
+    .logo {background-color: white;}
     header {
-        background-color: RGB(6, 56, 81, 0.5);
+        background-color: white;
     }
     aside {
         background-color: antiquewhite;
@@ -125,17 +163,18 @@ footer {
         height: 100%;
         display: grid;
         grid-template-areas:
-            'a a a a a'
+            'l a a a a'
             'b c c c c'
             'd d d d d';
-        grid-template-rows: 50px auto 50px;
+        grid-template-rows: 100px auto 50px;
         grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
     }
 }
 /* Extra dideli įrenginiai (dideli laptopai ir stalinai PC, 1200px ir aukščiau) */
 @media only screen and (min-width: 1200px) {
+    .logo {background-color: white;}
     header {
-        background-color: antiquewhite;
+        background-color: white;
     }
     aside {
         background-color: antiquewhite;
@@ -150,10 +189,10 @@ footer {
         height: 100%;
         display: grid;
         grid-template-areas:
-            'a a a a a'
+            'l a a a a'
             'b c c c c'
             'd d d d d';
-        grid-template-rows: 50px auto 50px;
+        grid-template-rows: 100px auto 50px;
         grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
     }
 
